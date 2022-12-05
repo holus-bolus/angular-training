@@ -6,17 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./date.component.scss'],
 })
 export class DateComponent implements OnInit {
-  // loggedIn = true;
-  isCollapsed: boolean = true;
-
+visibility: boolean = true;
+toggle(){
+  this.visibility = !this.visibility;
+}
   constructor() {}
 
-  // myEvent(event: any) {
-  //   console.log(event);
-  // }
-  toggleCollapse() {
-    this.isCollapsed = !this.isCollapsed;
-  }
-
-  ngOnInit(): void {}
+  ngOnInit() {}
 }
+

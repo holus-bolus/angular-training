@@ -19,6 +19,22 @@
 
 <!--<button (click)="myEvent($event)">Event</button>-->
 
-<button *ngIf="isCollapsed" (click)="toggleCollapse()">Show info</button>
-<button *ngIf="!isCollapsed" (click)="toggleCollapse()">Hide info</button>
-<div *ngIf="!isCollapsed"><p>Lorem ipsum dolor sit amet.</p></div>
+<!--<button *ngIf="isCollapsed" (click)="toggleCollapse()">Show info</button>-->
+<!--<button *ngIf="!isCollapsed" (click)="toggleCollapse()">Hide info</button>-->
+<!--<div *ngIf="!isCollapsed"><p>Lorem ipsum dolor sit amet.</p></div>-->
+<!--<input type="text" [ngModel]="text">-->
+
+<!--<p>{{text}}</p>-->
+<!--Класи можна прописувати як через квадратні дужки, так і через ngClass-->
+
+<!--<div [class.hello]="true"><h1>Hello world</h1>-->
+<!--  <p [ngClass]="{class2:true}">Lorem ipsum dolor sit amet.</p>-->
+<!--</div>-->
+
+<!--ngStyle-->
+
+<div [ngStyle]="{'invisible':'visibility'}">
+  <h1>Hello world</h1>
+  <p >Lorem ipsum dolor sit amet.</p>
+</div>
+<button (click)="toggle()">Toggle</button>
